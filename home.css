@@ -25,7 +25,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    margin: 40px 0px;
+    margin: 40px 0px 80px;
 }
 
 header a {
@@ -44,6 +44,8 @@ header a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    position: relative;
 }
 
 .apresentacao img {
@@ -92,6 +94,7 @@ span.ponto {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     margin: 160px 0 0 0;
 }
 
@@ -117,6 +120,11 @@ span.ponto {
     justify-content: center;
     margin: 120px 0 0 0;
     padding: 40px 0;
+}
+
+.circulo {
+    position: absolute;
+    z-index: -1;
 }
 
 @media(max-width: 780px) {
@@ -169,5 +177,9 @@ span.ponto {
 
     .rodape {
         margin: 40px 0 0 0;
+    }
+
+    .circulo {
+        display: none;
     }
 }
