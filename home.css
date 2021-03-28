@@ -36,8 +36,13 @@ header a {
 
 .apresentacao {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.apresentacao img {
+    max-width: 100%;
 }
 
 .apresentacao h1 {
@@ -49,8 +54,31 @@ header a {
 .apresentacao p {
     font-size: 28px;
     line-height: 42px;
+    margin-top: 24px;
 }
 
 .apresentacao span {
-    color: #007AFF;
+    color: #007AFF; 
+}
+
+@media(max-width: 780px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .apresentacao div {
+        margin-top: 40px;
+    }
+   
+    .apresentacao h1 {
+        font-size: 40px;
+        line-height: 44px;
+        font-weight: 600;
+    }
+
+    .apresentacao p {
+        font-size: 14px;
+        line-height: 42px;
+    }
 }
