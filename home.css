@@ -137,10 +137,12 @@ span.ponto {
         margin-top: 40px;
     }
    
-    h1 {
+    .apresentacao h1, .onde-estudo h1, #quem-sou h1 {
         font-size: 40px;
         line-height: 44px;
         font-weight: 600;
+
+        align-self: flex-start;
     }
 
     .apresentacao p {
